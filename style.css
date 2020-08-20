@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #77aa77;
+  background-image: url(./img/background.svg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+label,
+input {
+  margin-right: 0.5em;
+}
+
+.button-container {
+  margin-top: 2.5em;
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: white;
+  border-radius: 0.5em;
+  border: 1px solid #696969;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+}
+
+.eventName {
+  position: relative;
+}
+
+.displayNameErr {
+  position: absolute;
+  left: 8.5em;
+  color: red;
+}
+
+.startDate {
+  position: relative;
+}
+
+.displayDateErr {
+  position: absolute;
+  left: 7em;
+  color: red;
+}
+
+#displayCountdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+  border-radius: 2px;
+  margin-top: 2em;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.display-label {
+  font-size: 2rem;
+  border-bottom: 0.1em solid black;
+}
+
+.display-day,
+.display-hours,
+.display-minutes,
+.display-seconds {
+  font-size: 1.5rem;
+  margin-left: 1.5em;
+}
+
+@media (max-width: 767px) {
+  .eventName,
+  .startDate {
+    margin-bottom: 1.5em;
+  }
+}
